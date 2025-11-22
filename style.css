@@ -1,0 +1,118 @@
+/* Menggunakan font Inter sebagai default, Orbitron untuk header */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #000000; /* Warna dasar hitam pekat */
+    /* Background pattern grid khas gamer */
+    background-image: url('https://wallpaperaccess.com/full/2140.jpg');
+    background-size: 150vh;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.0);
+    backdrop-filter: blur(5px);
+    border-radius: 25px;
+    border-width: 3.5px;
+    border-color: rgba(12, 12, 12);
+    border-style: solid;
+    overflow: hidden;
+    margin: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: clamp(90%, 60%, 95%);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+}
+.navbare {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(107, 107, 107, 0.1);
+    backdrop-filter: blur(5px);
+            border-radius: 200px;
+            margin-top: 1rem;
+            margin-right: 5rem;
+            margin-left: 5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+    transition: 0.8s ease-in-out;
+}
+
+.NavSet {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.port {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.0);
+    backdrop-filter: blur(3px);
+    border-radius: 25px;
+    border-width: 3.5px
+}
+
+.tobrut {
+    display: flex;
+    justify-content: space-between;
+    align-items: fixed;
+    flex-wrap: wrap;
+}
+
+.font-orbitron {
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #171717; /* neutral-900 */
+}
+::-webkit-scrollbar-thumb {
+    background: #f8f8f8; /* purple-500 */
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #ff0000; /* purple-400 */
+}
+
+/* Animasi untuk modal */
+.product-card:hover{
+    transform: scale(1.05);
+    transition: 0.8s ease-in-out;
+}
+
+.modal-enter {
+    opacity: 0;
+    transform: scale(1.95) translateY(10px);
+}
+.modal-enter-active {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    transition: opacity 300ms, transform 300ms;
+}
+.modal-leave {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+}
+.modal-leave-active {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+    transition: opacity 300ms, transform 300ms;
+}
+
+/* Efek glow untuk border */
+.gamer-border-glow {
+    border: 1px solid #980000; /* violet-900 */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+
