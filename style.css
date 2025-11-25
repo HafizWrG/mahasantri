@@ -28,7 +28,7 @@ body {
 .navbare {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 20px;
     background: rgba(107, 107, 107, 0.1);
     backdrop-filter: blur(5px);
@@ -116,3 +116,13 @@ body {
 }
 
 
+@media screen and (max-width: 640px) {
+    .navbare {
+        scale: 0.8;
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+    .hidden.sm\:flex {
+        display: none;
+    }
+}
