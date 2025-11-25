@@ -34,20 +34,27 @@
                 </div>
                 
                 <!-- Nav Links & Cart -->
-                <div class="flex items-center space-x-2 md:space-x-4">
-                    <a href="#" id="store-link" class="text-neutral-400 hover:text-fuchsia-400 transition-colors hidden md:block px-3 py-2 rounded-md text-sm font-medium">Data</a>
-                    <a href="#" id="posts-link" class="text-neutral-400 hover:text-fuchsia-400 transition-colors hidden md:block px-3 py-2 rounded-md text-sm font-medium">Laporan</a>
+                <div class="hidden sm:flex items-center space-x-2 md:space-x-4">
+                    <a href="#" id="store-link" class="text-neutral-400 hover:text-fuchsia-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">Data</a>
+                    <a href="#" id="posts-link" class="text-neutral-400 hover:text-fuchsia-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">Laporan</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="sm:hidden">
+                    <button id="mobile-menu-button" class="text-white p-2">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
                 </div>
             </div>
-            <!-- Mobile Search Bar -->
-            <div class="sm:hidden pb-4">
-            <div class="relative w-full">
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden sm:hidden w-full pt-4">
+                <a href="#" id="store-link-mobile" class="block text-neutral-400 hover:text-fuchsia-400 transition-colors px-3 py-2 rounded-md text-base font-medium">Data</a>
+                <a href="#" id="posts-link-mobile" class="block text-neutral-400 hover:text-fuchsia-400 transition-colors px-3 py-2 rounded-md text-base font-medium">Laporan</a>
+                <div class="relative w-full max-w-xs mt-4">
                     <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                         <i data-lucide="search" class="w-5 h-5 text-neutral-500"></i>
                     </div>
                     <input type="search" id="search-input-mobile" placeholder="Cari produk..." class="w-full bg-neutral-900 border border-neutral-800 rounded-lg pl-10 pr-4 py-2 text-white placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-fuchsia-500 focus:border-fuchsia-500 transition-all">
-                                        <a href="#" id="store-link" class="text-neutral-400 hover:text-fuchsia-400 transition-colors hidden md:block px-3 py-2 rounded-md text-sm font-medium">Data</a>
-                    <a href="#" id="posts-link" class="text-neutral-400 hover:text-fuchsia-400 transition-colors hidden md:block px-3 py-2 rounded-md text-sm font-medium">Laporan</a>
                 </div>
             </div>
         </div>
@@ -142,7 +149,6 @@
                 <!-- Table Nilai Hafiz WRG -->
             <div class="table-container mt-4">
                 <div class="overflow-x-auto rounded-lg bg-neutral-900 p-4 shadow-sm">
-                      <h1 class="text-5x1 textuppercase text-center text-neutral-300">M. Hafiz Anshary</h1>
                     <table class="min-w-[1000px] w-full text-sm text-left text-gray-300">
                         <thead class="text-xs tracking-wider uppercase bg-neutral-800 text-neutral-300">
                             <tr>
@@ -353,7 +359,7 @@
                                 <td class="px-6 py-4">N/A</td>
                                 <td class="px-6 py-4">97</td>
                                 <td class="px-6 py-4">98</td>
-                                <td class="px-6 py-4">Done</td>
+                                <td class="px-6 py-4">BLM</td>
                             </tr>
                                 <tr class="border-b border-neutral-800">
                                 <td class="px-6 py-4">Pengantar Bisnis</td>
@@ -367,6 +373,116 @@
                                 <td class="px-6 py-4">N/A</td>
                                 <td class="px-6 py-4">88</td>
                                 <td class="px-6 py-4">90</td>
+                                <td class="px-6 py-4">BLM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+<!-- Table Nilai Fajri -->
+            <div class="table-container mt-4">
+                <div class="overflow-x-auto rounded-lg bg-neutral-900 p-4 shadow-sm">
+                    <h1 class="text-5x1 textuppercase text-center text-neutral-300">Zakia Fajri</h1>
+                    <table class="min-w-[1000px] w-full text-sm text-left text-gray-300">
+                        <thead class="text-xs tracking-wider uppercase bg-neutral-800 text-neutral-300">
+                            <tr>
+                                <th class="px-6 py-3">MATKUL</th>
+                                <th class="px-6 py-3">D1</th>
+                                <th class="px-6 py-3">D2</th>
+                                <th class="px-6 py-3">D3</th>
+                                <th class="px-6 py-3">D4</th>
+                                <th class="px-6 py-3">D5</th>
+                                <th class="px-6 py-3">D6</th>
+                                <th class="px-6 py-3">D7</th>
+                                <th class="px-6 py-3">D8</th>
+                                <th class="px-6 py-3">T1</th>
+                                <th class="px-6 py-3">T2</th>
+                                <th class="px-6 py-3">T3</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-center">
+                            <tr class="border-b border-neutral-800">
+                                <td class="px-6 py-4">Pengantar Sosiologi</td>
+                                <td class="px-6 py-4">88</td>
+                                <td class="px-6 py-4">91</td>
+                                <td class="px-6 py-4">92</td>
+                                <td class="px-6 py-4">92</td>
+                                <td class="px-6 py-4">90</td>
+                                <td class="px-6 py-4">90</td>
+                                <td class="px-6 py-4">Done</td>
+                                <td class="px-6 py-4">N/A</td>
+                                <td class="px-6 py-4">89</td>
+                                <td class="px-6 py-4">90</td>
+                                <td class="px-6 py-4">Done</td>
+                            </tr>
+                            <tr class="border-b border-neutral-800">
+                                <td class="px-6 py-4">SS Budaya Indonesia</td>
+                                <td class="px-6 py-4">88</td>
+                                <td class="px-6 py-4">90</td>
+                                <td class="px-6 py-4">90</td>
+                                <td class="px-6 py-4">100</td>
+                                <td class="px-6 py-4">88</td>
+                                <td class="px-6 py-4">80</td>
+                                <td class="px-6 py-4">85</td>
+                                <td class="px-6 py-4">N/A</td>
+                                <td class="px-6 py-4">90</td>
+                                <td class="px-6 py-4">95</td>
+                                <td class="px-6 py-4">88</td>
+                            </tr>
+                            <tr class="border-b border-neutral-800">
+                                <td class="px-6 py-4">Pancasila</td>
+                                <td class="px-6 py-4">79</td>
+                                <td class="px-6 py-4">78</td>
+                                <td class="px-6 py-4">82</td>
+                                <td class="px-6 py-4">86</td>
+                                <td class="px-6 py-4">84</td>
+                                <td class="px-6 py-4">88</td>
+                                <td class="px-6 py-4">90</td>
+                                <td class="px-6 py-4">N/A</td>
+                                <td class="px-6 py-4">76</td>
+                                <td class="px-6 py-4">88</td>
+                                <td class="px-6 py-4">90</td>
+                            </tr>
+                            <tr class="border-b border-neutral-800">
+                                <td class="px-6 py-4">Bahasa Inggris</td>
+                                <td class="px-6 py-4">78</td>
+                                <td class="px-6 py-4">85</td>
+                                <td class="px-6 py-4">80</td>
+                                <td class="px-6 py-4">84</td>
+                                <td class="px-6 py-4">85</td>
+                                <td class="px-6 py-4">83</td>
+                                <td class="px-6 py-4">85</td>
+                                <td class="px-6 py-4">N/A</td>
+                                <td class="px-6 py-4">100</td>
+                                <td class="px-6 py-4">100</td>
+                                <td class="px-6 py-4">100</td>
+                            </tr>
+                            <tr class="border-b border-neutral-800">
+                                <td class="px-6 py-4">Bahasa Indonesia</td>
+                                <td class="px-6 py-4">90</td>
+                                <td class="px-6 py-4">78</td>
+                                <td class="px-6 py-4">86</td>
+                                <td class="px-6 py-4">94</td>
+                                <td class="px-6 py-4">82</td>
+                                <td class="px-6 py-4">72</td>
+                                <td class="px-6 py-4">88</td>
+                                <td class="px-6 py-4">N/A</td>
+                                <td class="px-6 py-4">86</td>
+                                <td class="px-6 py-4">82</td>
+                                <td class="px-6 py-4">Done</td>
+                            </tr>
+                            <tr class="border-b border-neutral-800">
+                                <td class="px-6 py-4">PPKN</td>
+                                <td class="px-6 py-4">88</td>
+                                <td class="px-6 py-4">92</td>
+                                <td class="px-6 py-4">93</td>
+                                <td class="px-6 py-4">Done</td>
+                                <td class="px-6 py-4">93</td>
+                                <td class="px-6 py-4">Done</td>
+                                <td class="px-6 py-4">Done</td>
+                                <td class="px-6 py-4">N/A</td>
+                                <td class="px-6 py-4">94</td>
+                                <td class="px-6 py-4">Done</td>
                                 <td class="px-6 py-4">Done</td>
                             </tr>
                         </tbody>
