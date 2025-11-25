@@ -158,3 +158,25 @@ searchInputMobile.addEventListener('input', debouncedFilter);
 
 // Inisialisasi: Tampilkan halaman toko saat pertama kali dibuka
 showPage('store-page');
+
+// Mobile menu
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+const storeLinkMobile = document.getElementById('store-link-mobile');
+const postsLinkMobile = document.getElementById('posts-link-mobile');
+
+mobileMenuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+});
+
+storeLinkMobile.addEventListener('click', (e) => {
+    e.preventDefault();
+    showPage('store-page');
+    mobileMenu.classList.add('hidden');
+});
+
+postsLinkMobile.addEventListener('click', (e) => {
+    e.preventDefault();
+    showPage('posts-page');
+    mobileMenu.classList.add('hidden');
+});
